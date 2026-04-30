@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineStream | Free Premium Trailers</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Watch high-quality movie trailers in a premium Netflix-style interface for free.">
+
+    <!-- Icons & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="main-nav">
+      <div class="nav-left">
+        <a href="#home" class="logo">CineStream</a>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#search">Browse</a>
+          <a href="#watchlist">My List</a>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <div class="search-box">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" id="global-search" class="search-input" placeholder="Titles, genres..." 
+                 onkeyup="if(event.key==='Enter') window.location.hash='#search?q='+this.value">
+        </div>
+        <div id="auth-links">
+          <!-- Auth injected here -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main id="app">
+      <div style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+        <div class="loader" style="font-family:'Bebas Neue'; color:var(--accent-color); font-size:3rem; animation: pulse 1.5s infinite;">
+          CineStream
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="padding: 60px var(--container-padding); border-top: 1px solid #222; margin-top: 100px; color: #555; text-align: center;">
+      <p>&copy; 2024 CineStream. All rights reserved. Trailers embedded from official YouTube channels.</p>
+    </footer>
+
+    <!-- App Entry -->
+    <script type="module" src="js/app.js"></script>
+
+  </body>
+  </html>
